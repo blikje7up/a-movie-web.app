@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import { Icon, Icons } from "@/components/Icon";
 
@@ -8,7 +8,7 @@ export function BrandPill(props: {
   hideTextOnMobile?: boolean;
   backgroundClass?: string;
 }) {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div
@@ -27,7 +27,8 @@ export function BrandPill(props: {
           props.hideTextOnMobile ? "hidden sm:block" : "",
         ].join(" ")}
       >
-        {t("global.name")}
+        {/* {t("global.name")} */}
+        a-movie-web.app
       </span>
     </div>
   );
